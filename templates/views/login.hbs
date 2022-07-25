@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   {{>headers}}
+</head>
+
+<body>
+   
+    {{>navbar}}
+
+    <div class="container col-10" >
+        <h1 class="heading1">Login To D`Furniture</h1>
+       <form action="/login" method="POST">
+             <div class="box">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="box">
+                <i class="fa fa-key"></i>
+                <input type="password" name="password" id="password" placeholder="Enter Your Password">
+            </div>
+            <button class="btn btn-style" type="submit">Login</button>
+       </form>
+    
+    </div>
+</body>
+{{>footer}}
+</html>
