@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+{{>headers}}
+
+</head>
+
+<body>
+{{>navbar}}
+    <div class="container1">
+        <h1 class="heading1">Rigistration To D`Furniture</h1>
+        <form action="/register" method="POST">
+            <div class="row">
+                <div class="box">
+                    <input type="text" name="firstname" placeholder="Enter first name">
+                </div>
+                <div class="box">
+                    <input type="text" name="lastname" placeholder="Enter second name">
+                </div>
+
+                <div class="box">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+
+                <div class="box">
+                    <i class="fa fa-key"></i>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                </div>
+                <div class="box">
+                    <i class="fa fa-key"></i>
+                    <input type="password" name="cpassword" id="password" placeholder="Confirm Your Password">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-style" >Sign Up</button>
+        </form>
+    </div>
+</body>
+{{>footer}}
+</html>
